@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\translate.css">
+	<title>Translate</title>
+</head>
+<body>
+	<img src="static\logo3.png" alt="Company logo" width="120" height="120" style="border-radius: 25px;"><br><br>
+	<br><br>
+	<div style="text-align: center">
+		<form action="/filetranslate" method="post">
+             <p>Select language:</p> <select name="language">
+                 <option name="hindi" value="hindi">Hindi</option>
+                 <option name="english" value="english">English</option>
+                 
+             </select><br><br>
+             <input type="submit" id="button1" value="Translate">
+         </form>
+	</div><br><br>
+    <div style="text-align: center">
+    	<form action="/return-transfiles/{{value}}">
+    		<input type="submit" id="button" onclick="" value="Preview"><br><br>
+    	</form>
+    </div>
+</body>
+</html>

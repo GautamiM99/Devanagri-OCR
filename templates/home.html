@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\home.css">
+	<title>Home Page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img src="static\logo3.png" alt="Company logo" width="120" height="120" style="border-radius: 25px;"><br><br>
+    <div style="text-align: center;">
+    	<form action="/handleUpload" method="post" enctype="multipart/form-data">
+            <p>Upload file(Format:.pdf,.jpeg,.png)<span class="glyphicon glyphicon-upload"></span></p><input type="file" name="file">
+             <input type="submit" value="Submit" id="button1">
+        </form>    <br><br>
+            <button type="button" class="btn btn-link" id="button"><a href="/translate">TRANSLATE</a></button><br><br>
+            <button type="button" class="btn btn-link" id="button"><a href="/convert">CONVERT</a></button><br><br>
+    </div>
+</body>
+</html>
